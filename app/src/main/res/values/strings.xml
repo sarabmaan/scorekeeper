@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Scorekeeper App</string>
+    <string name="score1_label">SCORE1</string>
+    <string name="score1_value">24</string>
+    <string name="score2_value">30</string>
+    <string name="score2_label">SCORE2</string>
+    <string name="increment">+</string>
+    <string name="decrement">-</string>
+</resources>
