@@ -4,96 +4,117 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/green"
     tools:context=".MainActivity">
+
+
     <TableRow>
         <TextView
             android:id="@+id/SCorekeeper"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/colorPrimaryDark"
-            android:textStyle="bold"
+            android:background="@android:color/holo_red_dark"
             android:text="ScoreKeeper"
-          android:textSize="40dp"/>
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="40dp"
+            android:textStyle="bold" />
     </TableRow>
-<TableRow>
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="30dp"
-        android:textColor="@color/colorPrimary"
-        android:text="@string/score1_label"
-        />
-
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="30dp"
-        android:textColor="@color/colorPrimary"
-        android:text="@string/score2_label"/>
-</TableRow>
     <TableRow>
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="30dp"
-        android:textColor="@color/colorPrimaryDark"
-        android:text="@string/increment"         />
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="30dp"
-        android:text="@string/increment" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_dark"
+            android:text="@string/score1_label"
+            android:textColor="@color/pink"
+            android:textSize="30dp" />
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#673AB7"
+            android:text="@string/score2_label"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30dp" />
     </TableRow>
+
     <TableRow>
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/colorPrimaryDark"
-        android:text="@string/decrement"
-        android:textSize="30dp"
-         />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#009688"
+            android:text="@string/increment"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FF5722"
+            android:text="@string/increment"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30dp" />
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0BD8F1"
+            android:text="@string/decrement"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30dp" />
+
         <Button
             android:id="@+id/button4"
-            android:textSize="30dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/colorPrimaryDark"
-            android:text="@string/decrement" />
+            android:background="@color/colorAccent"
+            android:text="@string/decrement"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
 
     </TableRow>
+
     <TableRow>
-    <RadioGroup
-        android:id="@+id/radioi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" >
 
-
-        <RadioButton
-            android:id="@+id/increment2"
+        <RadioGroup
+            android:id="@+id/radioi"
+            style="@style/GreenText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1"
-            android:checked="true"/>
+            >
 
-        <RadioButton
-            android:id="@+id/radioincrement2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="2"/>
+            <RadioButton
+                android:id="@+id/increment2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="1"
+                android:textSize="3mm" />
 
-        <RadioButton
-            android:id="@+id/radioincrement"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="3"/>
-    </RadioGroup>
-</TableRow>
+            <RadioButton
+                android:id="@+id/radioincrement2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:textSize="3mm" />
+
+            <RadioButton
+                android:id="@+id/radioincrement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:textSize="3mm" />
+        </RadioGroup>
+    </TableRow>
 </TableLayout>
